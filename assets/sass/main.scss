@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url('https://fonts.googleapis.com/css?family=Courgette');
 
 /*
 	Read Only by HTML5 UP
@@ -727,6 +728,85 @@
 			img {
 				border-radius: 0;
 			}
+
+			slider {
+				display: block;
+				height: 100%;
+				overflow: hidden;
+				position: absolute;
+				width: 100%;
+
+				> * {
+					animation: slide 12s infinite;
+					display: block;
+					height: 100%;
+					overflow: hidden;
+					position: absolute;
+					width: 100%;
+				}
+
+				slide {
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4) {
+						background-position: center;
+						background-size: cover;
+					}
+
+					&:nth-child(1) {
+						animation-delay: -1s;
+						background-image: url('../../images/banner-01-blur.png');
+						left: 0%;
+					}
+
+					&:nth-child(2) {
+						animation-delay: 2s;
+						background-image: url('../../images/banner-02-blur.jpg');
+					}
+
+					&:nth-child(3) {
+						animation-delay: 5s;
+						background-image: url('../../images/banner-03-blur.jpg');
+					}
+
+					&:nth-child(4) {
+						animation-delay: 8s;
+						background-image: url('../../images/banner-04-blur.jpg');
+						left: 0%;
+					}
+
+					p {
+						font-family: 'Courgette', cursive;
+						color: _palette(accent1, fg-bold);
+						display: inline-block;
+						font-size: 2.5em;
+						height: 100%;
+						margin-top: 3.25em;
+						text-align: center;
+						text-shadow:
+					    -1px -1px 0 #000,
+					     1px -1px 0 #000,
+					    -1px  1px 0 #000,
+					     1px  1px 0 #000;
+						width: 100%;
+
+						span {
+							color: _palette(fg-light);
+							font-size: .7em;
+						}
+					}
+
+					@keyframes slide {
+						0% { left: 100%; width: 100%; }
+						5% { left: 0%; }
+						25% { left: 0%; }
+						30% { left: -100%; width: 100%; }
+						30.0001% { left: -100%; width: 0%; }
+						100% { left: 100%; width: 0%; }
+					}
+				}
+			}
 		}
 	}
 
@@ -1274,7 +1354,9 @@
 			border-top: solid (_size(border-width) * 3) _palette(border);
 
 			> .container {
-				padding: 6em 0 4em 0;
+				background-color: _palette(bg-light);
+				padding: 6em 2em 4em;
+				width: 55%;
 			}
 
 			&:first-child {
@@ -1567,6 +1649,10 @@
 			}
 
 	}
+
+/* ---------------------------------------------
+MEDIA QUERIES & BREAKPOINTS FOR RESPONSIVE MOBILE DESIGN
+--------------------------------------------- */
 
 /* Small */
 
