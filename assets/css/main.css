@@ -1605,6 +1605,10 @@ input[type="button"],
       color: #d1f1e9;
       font-style: italic;
       margin: 1em 0 0 0; }
+    #header > header .phone {
+      font-size: 16px; }
+      #header > header .phone a {
+        text-decoration: none; }
   #header > footer {
     -moz-flex-shrink: "0";
     -webkit-flex-shrink: "0";
@@ -1612,12 +1616,8 @@ input[type="button"],
     flex-shrink: "0";
     bottom: 0;
     left: 0;
-    padding-top: 1em;
+    padding-top: .75em;
     width: 100%; }
-    #header > footer .phone {
-      font-size: 18px; }
-      #header > footer .phone a {
-        text-decoration: none; }
     #header > footer .icons {
       margin: 0; }
       #header > footer .icons li a {
