@@ -4,6 +4,28 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* ---------------------------------------------
+// BANNER SLIDESHOW/CAROUSEL
+--------------------------------------------- */
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("my-carousel");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 20000);
+}
+
+
+/* ---------------------------------------------
+// DEFAULT PRE-MADE FUNCTIONS
+--------------------------------------------- */
 (function($) {
 
 	var $window = $(window),
