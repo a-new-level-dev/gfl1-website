@@ -122,6 +122,8 @@ body {
 				@include vendor('animation', 'none !important');
 				@include vendor('transition', 'none !important');
 			}
+
+			.quote { display: none; }
 		}
 
 }
@@ -145,7 +147,7 @@ a {
 
 	&:hover {
 		border-bottom-color: transparent;
-		color: _palette(accent1, bg) !important;
+		color: _palette(border-orange) !important;
 	}
 }
 
@@ -728,7 +730,7 @@ input[type="radio"] {
 
 	&.main {
 		display: block;
-		height: 20em;
+		height: 18em;
 		border-radius: 0;
 
 		img {
@@ -736,13 +738,18 @@ input[type="radio"] {
 		}
 
 		.my-carousel {
-			p {
+			p,
+			.quote-source {
 				font-family: _font(banner);
+			}
+
+			.quote {
 				color: _palette(accent1, fg-bold);
 				display: inline-block;
 				font-size: 2.5em;
 				height: 100%;
-				margin-top: 3.25em;
+				line-height: 1.5em;
+				margin-top: 2.65em;
 				position: relative;
 				text-align: center;
 				text-shadow:
@@ -751,11 +758,15 @@ input[type="radio"] {
 			    -1px  1px 0 #000,
 			     1px  1px 0 #000;
 				width: 100%;
+			}
 
-				span {
-					color: _palette(fg-light);
-					font-size: .7em;
-				}
+			.quote-source {
+				bottom: .5em;
+				color: _palette(fg-light);
+				font-size: 1em;
+				position: absolute;
+				right: 1.5em;
+				text-align: right;
 			}
 		}
 	}
@@ -1124,7 +1135,7 @@ input[type="button"],
 		color: _palette(header, fg);
 
 		&:hover {
-			color: _palette(accent1, bg) !important;
+			color: _palette(border-orange) !important;
 		}
 	}
 
@@ -1137,6 +1148,10 @@ input[type="button"],
 			display: block;
 			margin: 0 auto _size(element-margin) auto;
 			width: 10em;
+
+			&:hover {
+				border-color: _palette(border-orange);
+			}
 		}
 
 		h1 {
@@ -1224,6 +1239,7 @@ input[type="button"],
 }
 
 /* Main */
+// GABE! THIS IS IMPORTANT!
 
 #main {
 	> section {
@@ -1232,7 +1248,7 @@ input[type="button"],
 		> .container {
 			background-color: _palette(bg-light);
 			padding: 3em 2em 4em;
-			width: 55%;
+			width: 65%;
 		}
 
 		&:first-child {
