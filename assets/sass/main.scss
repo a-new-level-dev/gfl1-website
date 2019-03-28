@@ -343,7 +343,7 @@ header {
 	p {
 		color: _palette(fg-light);
 		position: relative;
-		margin: 0 0 (_size(element-margin) * 0.75) 0;
+		margin: 0 0 (_size(element-margin) * 0.3) 0;
 	}
 
 	h2 + p {
@@ -758,91 +758,6 @@ input[type="radio"] {
 				}
 			}
 		}
-
-		/* ---------------------------------------------
-		// TRYING TO DO A CAROUSEL w/ JUST HTML & CSS
-		--------------------------------------------- */
-		// slider {
-		// 	display: block;
-		// 	height: 100%;
-		// 	overflow: hidden;
-		// 	position: absolute;
-		// 	width: 100%;
-
-		// 	> * {
-		// 		@include vendor('animation-name', 'carousel');
-		// 		@include vendor('animation-duration', '12s');
-		// 		@include vendor('animation-iteration-count', 'infinite');
-		// 		// animation: carousel 12s infinite;
-		// 		display: block;
-		// 		height: 100%;
-		// 		overflow: hidden;
-		// 		position: absolute;
-		// 		width: 100%;
-		// 	}
-
-		// 	@include keyframes(carousel) {
-		// 		0% { left: 100%; width: 100%; }
-		// 		5% { left: 0%; }
-		// 		25% { left: 0%; }
-		// 		30% { left: -100%; width: 100%; }
-		// 		30.0001% { left: -100%; width: 0%; }
-		// 		100% { left: 100%; width: 0%; }
-		// 	}
-
-		// 	slide {
-		// 		&:nth-child(1),
-		// 		&:nth-child(2),
-		// 		&:nth-child(3),
-		// 		&:nth-child(4) {
-		// 			background-position: center;
-		// 			background-size: cover;
-		// 		}
-
-		// 		&:nth-child(1) {
-		// 			animation-delay: -1s;
-		// 			background-image: url('../../images/banner-01-blur.jpg');
-		// 			left: 0%;
-		// 		}
-
-		// 		&:nth-child(2) {
-		// 			animation-delay: 2s;
-		// 			background-image: url('../../images/banner-02-blur.jpg');
-		// 		}
-
-		// 		&:nth-child(3) {
-		// 			animation-delay: 5s;
-		// 			background-image: url('../../images/banner-03-blur.jpg');
-		// 		}
-
-		// 		&:nth-child(4) {
-		// 			animation-delay: 8s;
-		// 			background-image: url('../../images/banner-04-blur.jpg');
-		// 			// left: 0%;
-		// 		}
-
-		// 		p {
-		// 			font-family: _font(banner);
-		// 			color: _palette(accent1, fg-bold);
-		// 			display: inline-block;
-		// 			font-size: 2.5em;
-		// 			height: 100%;
-		// 			margin-top: 3.25em;
-		// 			text-align: center;
-		// 			text-shadow:
-		// 		    -1px -1px 0 #000,
-		// 		     1px -1px 0 #000,
-		// 		    -1px  1px 0 #000,
-		// 		     1px  1px 0 #000;
-		// 			width: 100%;
-
-		// 			span {
-		// 				color: _palette(fg-light);
-		// 				font-size: .7em;
-		// 			}
-		// 		}
-		// 	}
-		// }
 	}
 }
 
@@ -1312,11 +1227,11 @@ input[type="button"],
 
 #main {
 	> section {
-		border-top: solid (_size(border-width) * 3) _palette(border);
+		border-top: solid (_size(border-width) * 3) _palette(border-orange);
 
 		> .container {
 			background-color: _palette(bg-light);
-			padding: 6em 2em 4em;
+			padding: 3em 2em 4em;
 			width: 55%;
 		}
 
