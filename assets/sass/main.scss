@@ -1075,6 +1075,12 @@ input[type="button"],
 			vertical-align: middle;
 			width: 50%;
 
+			span {
+				font-size: 80%;
+				font-style: italic;
+				padding-left: .5em;
+			}
+
 			> :last-child {
 				margin-bottom: 0;
 			}
@@ -1090,7 +1096,7 @@ input[type="button"],
 	@include vendor('justify-content', 'space-between');
 	background: _palette(header, bg);
 	color: _palette(header, fg);
-	height: 100%;
+	height: 100vh;
 	overflow-y: auto;
 	position: fixed;
 	text-align: center;
@@ -1154,8 +1160,6 @@ input[type="button"],
 
 		.phone {
 			font-size: 16px;
-
-			a { text-decoration: none; }
 		}
 	}
 
@@ -1322,8 +1326,15 @@ input[type="button"],
 
 	#main {
 		> section {
+			.my-carousel {
+				> .quote {
+					font-size: 2em;
+				}
+			}
+
 			> .container {
-				padding: 4em 0 2em 0;
+				padding: 4em 1em 2em;
+				width: 80%;
 			}
 		}
 	}

@@ -1531,6 +1531,10 @@ input[type="button"],
     display: inline-block;
     vertical-align: middle;
     width: 50%; }
+    .features article .inner span {
+      font-size: 80%;
+      font-style: italic;
+      padding-left: .5em; }
     .features article .inner > :last-child {
       margin-bottom: 0; }
 
@@ -1550,7 +1554,7 @@ input[type="button"],
   justify-content: "space-between";
   background: #111111;
   color: #f8d5cc;
-  height: 100%;
+  height: 100vh;
   overflow-y: auto;
   position: fixed;
   text-align: center;
@@ -1589,8 +1593,6 @@ input[type="button"],
       margin: 1em 0 0 0; }
     #header > header .phone {
       font-size: 16px; }
-      #header > header .phone a {
-        text-decoration: none; }
   #header > footer {
     -moz-flex-shrink: "0";
     -webkit-flex-shrink: "0";
@@ -1694,8 +1696,11 @@ input[type="button"],
     padding-right: 21em; }
 
   /* Main */
+  #main > section .my-carousel > .quote {
+    font-size: 2em; }
   #main > section > .container {
-    padding: 4em 0 2em 0; } }
+    padding: 4em 1em 2em;
+    width: 80%; } }
 /* Large */
 @media screen and (max-width: 1280px) {
   /* Basic */
