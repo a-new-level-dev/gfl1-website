@@ -914,29 +914,16 @@ ul.actions {
 ul.feature-icons {
 	list-style: none;
 	padding-left: 0;
+	display: flex;
 
 	li {
 		@include icon;
-		display: inline-block;
-		margin: 0 0 (_size(element-margin) * 0.75) 0;
-		padding: 0.35em 0 0 3.5em;
+		display: flex;
+		justify-content: space-around;
+		padding: .5em;
 		position: relative;
 		vertical-align: top;
-		width: 48%;
-
-		&:before {
-			background: _palette(accent1, bg);
-			border-radius: 100%;
-			color: _palette(accent1, fg-bold);
-			display: block;
-			height: 2.5em;
-			left: 0;
-			line-height: 2.5em;
-			position: absolute;
-			text-align: center;
-			top: 0;
-			width: 2.5em;
-		}
+		width: 100%;
 	}
 }
 
