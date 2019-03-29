@@ -1600,7 +1600,8 @@ input[type="button"],
     flex-shrink: "0";
     bottom: 0;
     left: 0;
-    padding-top: .75em;
+    padding: .75em 0;
+    position: absolute;
     width: 100%; }
     #header > footer .icons {
       margin: 0; }
