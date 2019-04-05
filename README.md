@@ -9,3 +9,11 @@ I'm a recent graduate from @AppAcademy in San Francisco and am looking for oppor
 I'm also a fan of the SF Giants, SJ Sharks and metal & electronic music.
 
 Enjoy and thanks for stopping by!
+
+![GFL Website](https://github.com/gflujan/gfl-portfolio/blob/master/images/readme/gfl-rd01.png)
+
+![GFL Projects](https://github.com/gflujan/gfl-portfolio/blob/master/images/readme/gfl-rd02.png)
+
+![GFL Skills](https://github.com/gflujan/gfl-portfolio/blob/master/images/readme/gfl-rd03.png)
+
+![GFL Contact](https://github.com/gflujan/gfl-portfolio/blob/master/images/readme/gfl-rd04.png)
