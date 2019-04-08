@@ -297,7 +297,7 @@ pre {
 
 .container {
 	margin: 0 auto;
-	max-width: calc(100% - #{_size(element-margin) * 2});
+	max-width: calc(100%);
 	width: _size(container-width);
 
 	&.xsmall {
@@ -1061,12 +1061,17 @@ input[type="button"],
 		.image {
 			display: inline-block;
 			padding-right: 2.5em;
+			transition: transform .25s ease;
 			vertical-align: middle;
 			width: 48%;
 
 			img {
 				display: block;
 				width: 100%;
+			}
+
+			&:hover {
+				transform: scale(1.05);
 			}
 		}
 
@@ -1334,7 +1339,7 @@ input[type="button"],
 			}
 
 			> .container {
-				padding: 4em 1em 2em;
+				padding: 4em 2em 2em;
 				width: 80%;
 			}
 		}
@@ -1671,7 +1676,7 @@ MEDIA QUERIES & BREAKPOINTS FOR RESPONSIVE MOBILE DESIGN
 	#main {
 		> section {
 			> .container {
-				padding: 2em 0 0 0;
+				padding: 2em 1em 0;
 			}
 		}
 	}
