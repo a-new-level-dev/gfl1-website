@@ -882,7 +882,7 @@ pre {
 /* Container */
 .container {
   margin: 0 auto;
-  max-width: calc(100% - 4.5em);
+  max-width: calc(100%);
   width: 45em; }
   .container.xsmall {
     width: 11.25em; }
@@ -1522,11 +1522,14 @@ input[type="button"],
   .features article .image {
     display: inline-block;
     padding-right: 2.5em;
+    transition: transform .25s ease;
     vertical-align: middle;
     width: 48%; }
     .features article .image img {
       display: block;
       width: 100%; }
+    .features article .image:hover {
+      transform: scale(1.05); }
   .features article .inner {
     display: inline-block;
     vertical-align: middle;
@@ -1700,7 +1703,7 @@ input[type="button"],
   #main > section .my-carousel > .quote {
     font-size: 2em; }
   #main > section > .container {
-    padding: 4em 1em 2em;
+    padding: 4em 2em 2em;
     width: 80%; } }
 /* Large */
 @media screen and (max-width: 1280px) {
@@ -1921,7 +1924,7 @@ MEDIA QUERIES & BREAKPOINTS FOR RESPONSIVE MOBILE DESIGN
 
   /* Main */
   #main > section > .container {
-    padding: 2em 0 0 0; }
+    padding: 2em 1em 0; }
 
   /* Footer */
   #footer {
