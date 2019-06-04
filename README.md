@@ -2,15 +2,6 @@
 
 [Live Site: gflujan.com](https://gflujan.com)
 
-## Technology 
-
-* Netlify CMS 
-* HTML5 
-* CSS3 
-* Sass / SCSS 
-* JavaScript (vanilla) 
-* Font Awesome 
-
 ## About 
 
 This is my central hub to display projects that I've worked on, technologies that I've used, some backstory about myself, and it's got a contact form as well!
@@ -20,6 +11,15 @@ I'm a recent graduate from @AppAcademy in San Francisco and am looking for oppor
 I'm also a fan of the SF Giants, SJ Sharks and metal & electronic music.
 
 Enjoy and thanks for stopping by!
+
+## Technology 
+
+* Netlify CMS 
+* HTML5 
+* CSS3 
+* Sass / SCSS 
+* JavaScript (vanilla) 
+* Font Awesome 
 
 ## Code Snippet 
 
