@@ -21,7 +21,7 @@ Enjoy and thanks for stopping by!
 * JavaScript (vanilla) 
 * Font Awesome 
 
-## Code Snippet 
+## Code Example 
 
 ```
 /* ---------------------------------------------
