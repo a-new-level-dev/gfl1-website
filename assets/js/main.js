@@ -41,6 +41,8 @@ window.addEventListener('keyup', (e) => {
   if (pressed.join('') === konamiCode.join('')) {
   	const hero = document.getElementById('hero');
   	hero.src = 'images/hero-sp.png';
+  	const audio = new Audio('assets/audio/bad_kitty.wav');
+		audio.play();
   }
 });
 
