@@ -22,6 +22,27 @@ function carousel() {
   setTimeout(carousel, 20000);
 }
 
+/* ---------------------------------------------
+// KONAMI CODE FUN
+--------------------------------------------- */
+const pressed = [];
+const konamiCode = [
+  'ArrowUp', 'ArrowUp',
+  'ArrowDown', 'ArrowDown',
+  'ArrowLeft', 'ArrowRight',
+  'ArrowLeft', 'ArrowRight',
+  'KeyB', 'KeyA', 'Enter'
+];
+
+window.addEventListener('keyup', (e) => {
+  pressed.push(e.code);
+  pressed.splice(-konamiCode.length - 1, pressed.length - konamiCode.length);
+
+  if (pressed.join('') === konamiCode.join('')) {
+  	const hero = document.getElementById('hero');
+  	hero.src = 'images/hero-sp.png';
+  }
+});
 
 /* ---------------------------------------------
 // DEFAULT PRE-MADE FUNCTIONS
