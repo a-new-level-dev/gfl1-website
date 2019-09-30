@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/54a255a5-f40f-4ea0-a2e3-7f49d02e21d6/deploy-status)](https://app.netlify.com/sites/gfl-one/deploys) 
 
-### [Live Site](https://gflujan.com)
+### [Live Site](https://www.gflujan.com/)
 
 This is my central hub to display projects that I've worked on, technologies that I've used, some backstory about myself, and it's got a contact form as well!
 
