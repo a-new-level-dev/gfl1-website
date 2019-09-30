@@ -1,0 +1,8 @@
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://gfl-one.netlify.com/*"
+  to = "https://www.gflujan.com/:splat"
+  status = 301
+  force = true
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
+  conditions = {Language = ["en","es"], Country = ["US"]}
