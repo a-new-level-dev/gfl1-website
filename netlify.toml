@@ -1,0 +1,3 @@
+[build]
+   base = "/"
+   command = "echo 'this should not be needed'"
