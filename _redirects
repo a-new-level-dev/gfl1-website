@@ -1,2 +1,2 @@
-# Redirect default Netlify subdomain to primary domain
+# Redirect the default Netlify domain version of my apps URL to show/use my custom domain name version
 https://gfl-one.netlify.com/* https://www.gflujan.com/:splat 301!
