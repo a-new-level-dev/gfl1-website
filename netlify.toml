@@ -4,7 +4,7 @@
 
 [[redirects]]
    from = "/test"
-   to = "google.com"
+   to = "https://google.com"
    status = 301
    force = true
 
