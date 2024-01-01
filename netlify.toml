@@ -1,11 +1,11 @@
 [build]
-   base = "/"
-   command = "echo 'no build command is needed'"
+base = "/"
+command = "echo 'no build command is needed'"
 
 [[redirects]]
-   # Redirect the default Netlify domain version of my apps URL to show/use my custom domain name version
-   from = "https://gfl-one.netlify.com/*"
-   to = "https://www.gflujan.com/:splat"
-   status = 301
-   force = true
+# Redirect the default Netlify domain version of my apps URL to show/use my custom domain name version
+from = "https://gfl-one.netlify.com/*"
+to = "https://www.gflujan.com/:splat"
+status = 301
+force = true
 
