@@ -8,4 +8,3 @@ from = "https://gfl-one.netlify.app/*"
 to = "https://www.gflujan.com/:splat"
 status = 301
 force = true
-
