@@ -89,24 +89,24 @@
             <!-- *********************************************************** -->
             <section id="about">
                <div class="image main" data-position="center">
-                  <div class="my-carousel">
+                  <div class="carousel-image">
                      <img src="./images/banner-01-blur.jpg" alt="George Eliot" />
                      <p class="quote">"It's never too late to be who you might have been."</p>
                      <div class="quote-source">- attributed to George Elliot</div>
                   </div>
-                  <div class="my-carousel">
+                  <div class="carousel-image">
                      <img src="./images/banner-02-blur.jpg" alt="Morpheus" />
                      <p class="quote">
                         "There's a difference between knowing the path and walking the path."
                      </p>
                      <div class="quote-source">- Morpheus</div>
                   </div>
-                  <div class="my-carousel">
+                  <div class="carousel-image">
                      <img src="./images/banner-03-blur.jpg" alt="Eckhart Tolle" />
                      <p class="quote">"Realize deeply that the present moment is all you have."</p>
                      <div class="quote-source">- Eckhart Tolle</div>
                   </div>
-                  <div class="my-carousel">
+                  <div class="carousel-image">
                      <img src="./images/banner-04-blur.jpg" alt="Cortana" />
                      <p class="quote">
                         "When the game is over, the king and pawn go into the same box."
@@ -119,8 +119,8 @@
                      <h2>Who is Gabriel F. Lujan?</h2>
                      <h3>A little bit about me...</h3>
                      <p>
-                        I was born & raised in the San Francisco Bay Area but currently work & live
-                        in the Los Angeles area.
+                        I was born & raised in the San Francisco Bay Area and currently work & live
+                        here.
                      </p>
                      <p>
                         Along with programming, my passions include guitar, music, hockey (<em
@@ -221,15 +221,27 @@
                <div class="container">
                   <h3>My Skills</h3>
                   <p>
-                     Here is a non-exhaustive list of technologies I have worked with, and some
-                     others that are on the horizon (last row, grey). If you have any
-                     recommendations for more, I would be happy to hear about them!
+                     Here is a list of some of the technologies I have worked with, and some others
+                     that are on the horizon (the greyed out icons). If you have any recommendations
+                     for more, I would be happy to hear about them!
                   </p>
                   <ul class="feature-icons">
                      <li>
                         <img
-                           alt="React.js"
-                           src="https://icongr.am/devicon/react-original.svg?size=60"
+                           alt="Vue.js"
+                           src="https://icongr.am/devicon/vuejs-original.svg?size=60"
+                        />
+                     </li>
+                     <li>
+                        <img
+                           alt="TypeScript"
+                           src="https://icongr.am/devicon/typescript-original.svg?size=60"
+                        />
+                     </li>
+                     <li>
+                        <img
+                           alt="Electron"
+                           src="https://icongr.am/devicon/electron-original.svg?size=60"
                         />
                      </li>
                      <li>
@@ -238,26 +250,8 @@
                            src="https://icongr.am/devicon/nodejs-original.svg?size=60"
                         />
                      </li>
-                     <li>
-                        <img
-                           alt="MongoDB"
-                           src="https://icongr.am/devicon/mongodb-original.svg?size=60"
-                        />
-                     </li>
-                     <li>
-                        <img
-                           alt="Express.js"
-                           src="https://icongr.am/devicon/express-original.svg?size=60&color=cccccc"
-                        />
-                     </li>
                   </ul>
                   <ul class="feature-icons">
-                     <li>
-                        <img
-                           alt="JavaScript"
-                           src="https://icongr.am/devicon/javascript-original.svg?size=60"
-                        />
-                     </li>
                      <li>
                         <img
                            alt="HTML5"
@@ -270,15 +264,15 @@
                      <li>
                         <img alt="Sass" src="https://icongr.am/devicon/sass-original.svg?size=60" />
                      </li>
+                     <li>
+                        <img alt="Yarn" src="https://icongr.am/devicon/yarn-original.svg?size=60" />
+                     </li>
                   </ul>
                   <ul class="feature-icons">
                      <li>
-                        <img alt="Ruby" src="https://icongr.am/devicon/ruby-original.svg?size=60" />
-                     </li>
-                     <li>
                         <img
-                           alt="Rails"
-                           src="https://icongr.am/devicon/rails-original-wordmark.svg?size=60"
+                           alt="GitHub"
+                           src="https://icongr.am/devicon/github-original.svg?size=60"
                         />
                      </li>
                      <li>
@@ -289,34 +283,14 @@
                      </li>
                      <li>
                         <img
-                           alt="Webpack"
-                           src="https://icongr.am/devicon/webpack-original.svg?size=60"
-                        />
-                     </li>
-                  </ul>
-                  <ul class="feature-icons">
-                     <li>
-                        <img
-                           alt="Python"
-                           src="https://icongr.am/devicon/python-plain.svg?size=60&color=444444"
-                        />
-                     </li>
-                     <li>
-                        <img
-                           alt="Go Language"
-                           src="https://icongr.am/devicon/go-plain.svg?size=60&color=444444"
+                           alt="Docker"
+                           src="https://icongr.am/devicon/docker-plain.svg?size=60&color=444444"
                         />
                      </li>
                      <li>
                         <img
                            alt="Swift"
                            src="https://icongr.am/devicon/swift-plain.svg?size=60&color=444444"
-                        />
-                     </li>
-                     <li>
-                        <img
-                           alt="Docker"
-                           src="https://icongr.am/devicon/docker-plain.svg?size=60&color=444444"
                         />
                      </li>
                   </ul>
@@ -371,11 +345,7 @@
                         <div class="col-12">
                            <ul class="actions">
                               <li>
-                                 <input
-                                    type="submit"
-                                    class="primary"
-                                    value="Send Message"
-                                 />&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <input type="submit" class="primary" value="Send Message" />
                                  <input type="reset" value="Reset Form" />
                               </li>
                            </ul>
@@ -386,11 +356,13 @@
             </section>
          </div>
 
-         <!-- Footer -->
+         <!-- *********************************************************** -->
+         <!-- ********************* FOOTER SECTION ********************* -->
+         <!-- *********************************************************** -->
          <section id="footer">
             <div class="container">
                <ul class="copyright">
-                  <li>&copy; Gabriel F. Lujan,&nbsp;&nbsp;All rights reserved.</li>
+                  <li>&copy;&nbsp;Gabriel&nbsp;F.&nbsp;Lujan,&nbsp;&nbsp;All rights reserved.</li>
                   <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                </ul>
             </div>
@@ -400,8 +372,20 @@
       <!-- ***************************************************************** -->
       <!-- **************************** SCRIPTS **************************** -->
       <!-- ***************************************************************** -->
+      <!--
+         loading the full jQuery library
+      -->
       <script src="assets/js/jquery.min.js"></script>
+      <!--
+         `scrollex` connects the sidebar sections to the actual content sections
+         e.g. when the "skills" section is in view, the "skills" tab is highlighted in the sidebar
+      -->
       <script src="assets/js/jquery.scrollex.min.js"></script>
+      <!--
+         `scrolly` makes the scrolling
+         (when clicking on the sidebar)
+         from one section to another smooth
+      -->
       <script src="assets/js/jquery.scrolly.min.js"></script>
       <script src="assets/js/browser.min.js"></script>
       <script src="assets/js/breakpoints.min.js"></script>
